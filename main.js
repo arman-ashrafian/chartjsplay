@@ -31,7 +31,7 @@ window.onload = () => {
         for (var x = 0; x < 11; x=x+.1) {
             lineConfig.data.datasets[0].data.push({
                 x: x,
-                y: eval(inputFeild.value)
+                y: eval(inputFeild.value)   // DANGER: maybe do some reg ex 0__0
             })
         }
         lineChart.update()
